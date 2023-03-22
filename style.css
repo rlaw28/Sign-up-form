@@ -1,7 +1,13 @@
 body{
     display: flex;
-    justify-content: flex-end;
     height: 100vh;
     background: no-repeat left url(./night-sky.jpg);
     background-size: contain;
+}
+
+.container{
+    width: 663px;
+    position: relative;
+    left: 580px;
+    padding:15px;
 }
