@@ -46,7 +46,6 @@ label, input {
 
 .input{
     display: flex;
-    flex-direction: column;
 }
 
 .credit-wrapper{
