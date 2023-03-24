@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
-    --main-bg: #f0f2f5;
+    --main-bg: #07092e;
     --secondary-bg: white;
 }
 
@@ -10,10 +10,12 @@ body{
     flex-direction: column;
     height: 100vh;
     width:100vw;
+    margin: 0;
     background: no-repeat left url(./night-sky.jpg);
     background-size: contain;
     background-color: var(--main-bg);
-    font-family: 'Roboto', sans-serif; ;
+    font-family: 'Roboto', sans-serif;
+    color: #f0f2f5;
 }
 
 label, input {
@@ -22,8 +24,8 @@ label, input {
         font-size: 100%;
         margin: 0;
         box-sizing: border-box;
-        width: 100%;
-        padding: 5px;
+        width: 325px;
+        padding: 10px;
         height: 30px;
 }
 
@@ -41,7 +43,11 @@ label, input {
 
 .input{
     display: flex;
-    justify-content: space-around;
+    padding: 15px;
+}
+
+.section-1{
+    margin-right: 45px;
 }
 .button-section, h3{
     padding: 15px;
