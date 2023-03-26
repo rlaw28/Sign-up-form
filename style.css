@@ -26,14 +26,47 @@ label, input {
         width: 325px;
         padding: 10px;
         height: 30px;
-        border: none;
         border-radius: 5px;
 }
 
+input{
+    border: 1px solid var(--main-bg);
+}
 
-input:invalid::after{
-    border-color: red;
-    content: "❌" ;
+input + span {
+    position: relative;
+}
+
+input:required+span::after {
+    font-size: 0.5rem;
+    position: absolute;
+    content: "required";
+    color: var(--main-font-color);
+    background-color: var(--main-bg);
+    padding: 5px 10px;
+    top: -65px;
+    left: 275px;
+}
+
+input + span::before{
+    position: absolute;
+    top: -35px;
+    left: 300px
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:invalid + span::before{
+    content: "✕";
+    color: red
+
+}
+
+input:valid + span::before{
+    content: "✓";
+    color: green;
 }
 
 button{
