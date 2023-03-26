@@ -7,12 +7,9 @@
 
 body{
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: row;
     width:100vw;
     margin: 0;
-    background: no-repeat left url(./night-sky.jpg);
-    background-size: contain;
     background-color: var(--main-bg);
     font-family: 'Roboto', sans-serif;
     color: #f0f2f5;
@@ -29,11 +26,20 @@ label, input {
         height: 30px;
 }
 
-.container{
-    width: 663px;
+.banner{
+    display: flex;
+    justify-content: center;
     position: relative;
-    left: 580px;
-    padding:15px;
+    bottom: 65%;
+    width: 650px;
+    font-size: 1.5rem;
+    background-color: black;
+}
+.credit{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 15%;
 }
 
 .service-p{
@@ -53,7 +59,3 @@ label, input {
     padding: 15px;
 }
 
-.credit-wrapper{
-    position: relative;
-    top: 485px;
-}
