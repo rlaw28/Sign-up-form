@@ -3,6 +3,8 @@ const password = document.getElementById('password');
 const confirmPass = document.getElementById('confirm-pass')
 
 
-form.addEventListener('submit', () => {
-    
-})
+// form.addEventListener('submit', () => {
+//     if (form.checkValidity === false) {
+        
+//     }
+// })
