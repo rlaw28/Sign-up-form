@@ -54,20 +54,20 @@ input + span::before{
     left: 300px
 }
 
-input:invalid{
+input:invalid:focus{
     border: 2px solid red;
 }
 
-input:invalid + span::before{
+input:invalid:focus + span::before{
     content: "✕";
     color: red
 
 }
-input:valid{
+input:valid:focus{
     border: 2px solid green;
 }
 
-input:valid + span::before{
+input:valid:focus + span::before{
     content: "✓";
     color: green;
 }
@@ -102,8 +102,7 @@ button:focus{
     bottom: 75%;
     width: 650px;
     font-size: 1.5rem;
-    background-color: black;
-    opacity: .7;
+    background: rgba(2, 2, 3, 0.6);
 }
 .credit-section{
     display: flex;
