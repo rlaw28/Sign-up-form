@@ -32,11 +32,11 @@
                         <span></span>
                         <span></span>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                         <span></span>
                         <span></span>
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" minlength="6" placeholder="Your Password" required>
+                        <input type="password" id="password" name="password" minlength="6" placeholder="Your Password" onchange="checkPass()" required>
                         <span></span>
                         <span></span>
                     </div>
@@ -46,11 +46,12 @@
                         <span></span>
                         <span></span>
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number" minlength="10" maxlength="10" placeholder="000-000-0000">
+                        <input type="tel" id="phone-number" name="phone-number" minlength="10" maxlength="10" placeholder="***-***-****">
                         <label for="confirm-pass">Confirm Password</label>
-                        <input type="password" id="confirm-pass" name="confirm-pass" minlength="6" placeholder="Confirm" required>
+                        <input type="password" id="confirm-pass" name="confirm-pass" minlength="6" placeholder="Confirm" onchange="checkPass()" required>
                         <span></span>
                         <span></span>
+                        <div class="password-msg"></div>
                     </div>
                 </div>
                 <div class="button-section">
