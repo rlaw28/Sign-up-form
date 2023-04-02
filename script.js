@@ -1,11 +1,19 @@
-const form = document.getElementById('main-form');
-const password = document.getElementById('password');
-const confirmPass = document.getElementById('confirm-pass');
-const formBtn = document.getElementById('form-btn');
-const passwordMsg = document.getElementById('confirm-msg');
+
+function checkPass() {
+  const password = document.querySelector('input[name=password]');
+  const confirm = document.querySelector('input[name=confirm-pass]');
+  if (confirm.value === password.value) {
+    confirm.setCustomValidity('');
+  } else {
+    confirm.setCustomValidity('Passwords do not match');
+  }
+}
 
 
-formBtn.addEventListener('click', () => {
- password === confirmPass ? passwordMsg.textContent = "Passwords match."
-: passwordMsg.textContent = "Passwords do not match." })
+
+
+
+
+
+
 
